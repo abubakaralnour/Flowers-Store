@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.banner {
+  padding-top: 10px;
+
+  width: 95%;
+  margin: auto;
+}
+
+.ShopAllBestBtn {
+  text-align: center;
+  padding: 35px;
+}
+
+.ShopAllBestBtn button {
+  font-size: 16px;
+  background-color: #144b3c;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+/*Top banner*/
+
+.topbaner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #2d2d2c;
+  
+}
+.topbaner-image {
+  height: 370px;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.overlay-text-banner {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #2d2d2c;
+}
+
+.largfont {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: playfair display, serif;
+}
+.overlay-text-banner p {
+  font-family: "proxima", sans-serif;
+}
+.overlay-text-banner button {
+  background-color: #085b45;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .overlay-text-banner {
+    position: absolute;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    .largfont {
+      font-size: 30px;
+    }
+  }
+  .overlay-text-banner p {
+    font-size: 18px;
+  }
+  .largfont {
+    font-size: 25px;
+  }
+  .button {
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 768px) {
+  .overlay-text-banner {
+    position: absolute;
+    left: 80%;
+  }
+  .largfont {
+    font-size: 25px;
+    margin: 1px;
+  }
+
+  .overlay-text-banner p {
+    margin: 1px;
+    font-size: 18px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .overlay-text-banner p {
+    font-size: 18px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .overlay-text-banner button {
+    font-size: 16px;
+    padding: 8px 20px;
+    width: 180px;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+
+@media (max-width: 576px) {
+  .largfont {
+    font-size: 46px;
+    padding: 10px;
+  }
+
+  .topbaner img {
+    width: 100%;
+    display: block;
+
+    object-fit: cover;
+    /* object-fit: cover;*/
+    object-position: center;
+  }
+
+  .topbaner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay-text-banner {
+    position: static; /* Removes absolute positioning */
+    transform: none;
+    background: none; /* Removes dark overlay */
+    color: black; /* Changes text color for readability */
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    font-size: 18px;
+  }
+
+  .overlay-text-banner p {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 10px;
+    color: #2d2d2c;
+  }
+
+  .overlay-text-banner button {
+    font-size: 16px;
+    width: 250px;
+  }
+}
+
+/*Markers*/
+.Markes-root {
+  background-color: #f7f9fc;
+  align-items: center;
+
+  padding-top: 10px;
+
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Markes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.Markesimg {
+  height: 100px;
+  width: 100px;
+}
+
+.marks-p {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+}
+
+/*Samedaycom*/
+
+.Samedaycom {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.Samedaycom-img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+}
+.overlay-text-Samedaycom{
+  position: absolute;
+
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: black;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  color: #2d2d2c;
+}
+
+.overlay-text-Samedaycom h2{ 
+   font-size: 48px;
+  font-weight: 700;
+  font-family: playfair display, serif;}
+.overlay-text-Samedaycom p{
+  font-family: sans-serif;
+  
+  font-size: 18px;
+  font-weight: 200;
+  padding: 10px;
+  color: #2d2d2c;
+}
+
+@media (max-width: 992px) {
+  .overlay-text-Samedaycom {
+    position: absolute;
+    left: 23%;
+    transform: translate(-50%, -50%);
+   
+  }
+  .overlay-text-Samedaycom  p {
+    font-size: 18px;
+  }
+  .largfont {
+    font-size: 25px;
+  }
+  .overlay-text-Samedaycom button {
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .overlay-text-Samedaycom {
+    position: absolute;
+    left: 24%;
+  }
+  .overlay-text-Samedaycom h2 {
+    font-size: 25px;
+    margin: 1px;
+  }
+
+  .overlay-text-Samedaycom p {
+    margin: 1px;
+    font-size: 18px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .overlay-text-Samedaycom button {
+    font-size: 16px;
+    padding: 8px 20px;
+    width: 180px;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+
+@media (max-width: 576px) {
+  .overlay-text-Samedaycom h2 {
+    font-size: 46px;
+    padding: 10px;
+  }
+
+  .overlay-text-Samedaycom img {
+    width: 100%;
+    display: block;
+
+    object-fit: cover;
+    /* object-fit: cover;*/
+    object-position: center;
+  }
+
+  .Samedaycom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay-text-Samedaycom {
+    position: static; /* Removes absolute positioning */
+    transform: none;
+    background: none; /* Removes dark overlay */
+    color: black; /* Changes text color for readability */
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    font-size: 18px;
+  }
+
+  .overlay-text-Samedaycom p {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 10px;
+    color: #2d2d2c;
+  }
+
+  .overlay-text-banner button {
+    font-size: 16px;
+    width: 250px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
