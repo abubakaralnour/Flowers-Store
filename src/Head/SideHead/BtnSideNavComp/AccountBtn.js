@@ -4,7 +4,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Collapse from "react-bootstrap/Collapse";
-const AccountBtn = ({ setMenuOpen }) => {//iif the close on button dost work in moble revew this page special prp
+const AccountBtn = () => {//iif the close on button dost work in moble revew this page special prp
   const [open, setOpen] = useState(false);
 
   return (

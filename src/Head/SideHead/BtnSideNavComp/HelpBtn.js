@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Collapse from "react-bootstrap/Collapse";
-const HelpBtn = ({ setMenuOpen }) => {//iif the close on button dost work in moble revew this page special prp
+const HelpBtn = () => {//iif the close on button dost work in moble revew this page special prp
   const [open, setOpen] = useState(false);
 
   return (

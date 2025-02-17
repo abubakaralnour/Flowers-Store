@@ -7,7 +7,7 @@ const MxHBtnHNv = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 992);
   const [menuOpen, setMenuOpen] = useState(false);
-
+console.log(menuOpen)
   // Check screen width dynamically
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 992);
@@ -70,67 +70,5 @@ const MxHBtnHNv = () => {
 };
 
 export default MxHBtnHNv;
-{
-  /* <li>
-                <Link to="/storelocation" onClick={() => setMenuOpen(false)}>
-                <span>Nextday</span>
-                <img src="Headimg/icons8-add-50.png" alt="add " className="add"/>
-                </Link>
-              </li>
-              <li>
-                <Link to="/storelocation" onClick={() => setMenuOpen(false)}>
-                  <span>Occaasons</span>
-                  <img src="Headimg/icons8-add-50.png" alt="add " className="add"/>
-                </Link>
-              </li>
-              <li>
-                <Link to="/storelocation" onClick={() => setMenuOpen(false)}>
-                  <span>Peonies</span>
-                  <img src="Headimg/icons8-add-50.png" alt="add " className="add"/>
-                </Link>
-              </li>
-              <li>
-                <Link to="/storelocation" onClick={() => setMenuOpen(false)}>
-                  <span>Nextday</span>
-                  <img src="Headimg/icons8-add-50.png" alt="add " className="add"/>
-                </Link>
-              </li>
-              <li>
-                <Link to="/storelocation" onClick={() => setMenuOpen(false)}>
-                  <span>Sameday</span>
-                  <img src="Headimg/icons8-add-50.png" alt="add " className="add"/>
-                </Link>
-              </li> <li>
-            <Link to="/trackorder" onClick={() => setMenuOpen(false)}>
-              <span>Valentine</span>
-              <img src="Headimg/icons8-add-50.png" alt="add " className="add"/>
-            </Link>
-            </li>
-              <li>
-                <Link to="/storelocation" onClick={() => setMenuOpen(false)}>
-                  <span>Subscriptons</span>
-                  <img src="Headimg/icons8-add-50.png" alt="add " className="add"/>
-                </Link>
-              </li>
-            </ul>
-            <ul>
-           
-            <li>
-            <Link to="/trackorder" onClick={() => setMenuOpen(false)}>
-              <span>Account</span>
-              <img src="Headimg/icons8-add-50.png" alt="add " className="add"/>
-            </Link>
-            </li>
-            <li>
-            <Link to="/trackorder" onClick={() => setMenuOpen(false)}>
-              <span>Help</span>
-              <img src="Headimg/icons8-add-50.png" alt="add " className="add"/>
-            </Link>
-            </li>
-            <li>
-            <Link to="/trackorder" onClick={() => setMenuOpen(false)}>
-            <span>StoreLocation</span>
-            <img src="Headimg/icons8-add-50.png" alt="add " className="add"/>
-            </Link>
-            </li> */
-}
+
+ 

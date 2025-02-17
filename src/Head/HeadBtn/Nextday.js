@@ -13,7 +13,7 @@ const Nextday = () => {
                 <img
                   src="https://i.imgur.com/I3pPDs5.png"
                   className="imgheart"
-                  alt="Arrow Icon"
+                  alt="ArrowIcon"
                 />
               </div>
             </Link>

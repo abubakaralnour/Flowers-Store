@@ -6,7 +6,7 @@ const Acount = () => {
 
 
 
-<img src="Heading/icons8-account-50.png" alt="My Image" />
+<img src="Heading/icons8-account-50.png" alt="MyImage" />
 
 
     </div>

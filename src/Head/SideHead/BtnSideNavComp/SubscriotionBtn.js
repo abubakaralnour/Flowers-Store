@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Collapse from "react-bootstrap/Collapse";
-const SubscriotionBtn = ({ setMenuOpen }) => {//iif the close on button dost work in moble revew this page special prp
+const SubscriotionBtn = () => {
+  //iif the close on button dost work in moble revew this page special prp
   const [open, setOpen] = useState(false);
 
   return (
@@ -14,7 +15,15 @@ const SubscriotionBtn = ({ setMenuOpen }) => {//iif the close on button dost wor
         aria-expanded={open}
       >
         {" "}
-        <span> <img src="https://i.imgur.com/fFZiDiB.png" className="imgheart" alt="Arrow Icon" />               SubscriotionBtn</span>
+        <span>
+          {" "}
+          <img
+            src="https://i.imgur.com/fFZiDiB.png"
+            className="imgheart"
+            alt="ArrowIcon"
+          />{" "}
+          SubscriotionBtn
+        </span>
         <img
           src={
             open
@@ -22,16 +31,12 @@ const SubscriotionBtn = ({ setMenuOpen }) => {//iif the close on button dost wor
               : "https://i.imgur.com/p93Hlkt.png"
           }
           className="add"
-            alt="as"
+          alt="as"
         />
       </div>
       <Collapse in={open}>
         <div id="example-collapse-text">
           <div className="BtnSideNavlist">
-      
-
-      
-
             <ul>
               <li className="BtnSideNavlistRoot">Collections</li>
 
@@ -51,12 +56,10 @@ const SubscriotionBtn = ({ setMenuOpen }) => {//iif the close on button dost wor
             <ul>
               <li className="BtnSideNavlistRoot">Flowers Type</li>
 
-        
-         
               <li>
                 <Link to="#">Peonies</Link>
               </li>
-             
+
               <li>
                 <Link to="#">Unique Stems</Link>
               </li>

@@ -11,10 +11,10 @@ const Subscriptons = () => {
           <li>
             <Link to="/help">
               <div className="twicearoow">
-              <li><img src='https://i.imgur.com/fFZiDiB.png' className='imgrealheart'/></li>
+              <li><img src='https://i.imgur.com/fFZiDiB.png' className='imgrealheart' alt="ArrowIcon" /></li>
 
                 <span>Subscriptons</span>
-                <img src="https://i.imgur.com/I3pPDs5.png" className="imgheart" alt="Arrow Icon" />
+                <img src="https://i.imgur.com/I3pPDs5.png" className="imgheart" alt="ArrowIcon" />
               </div>
             </Link>
 

@@ -11,7 +11,7 @@ import AccountBtn from "./AccountBtn";
 import HelpBtn from "./HelpBtn";
 import TrackOrderBtn from "./TrackOrderBtn";
 import StoreLocationBtn from "./StoreLocationBtn";
-const BtnSideNav = ({ setMenuOpen }) => {//iif the close on button dost work in moble revew this page special prp
+const BtnSideNav = () => {//iif the close on button dost work in moble revew this page special prp
 
   return (
     

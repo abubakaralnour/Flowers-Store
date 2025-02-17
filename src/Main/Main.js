@@ -11,6 +11,8 @@ const Main = () => {
     <MainImg/>
     <Cards/>
     <Banner/>
+
+    
     </div>
   )
 }

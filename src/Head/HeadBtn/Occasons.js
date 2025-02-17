@@ -12,7 +12,7 @@ const Occaasons = () => {
             <Link to="/help">
               <div className="twicearoow">
                 <span>Occaasons</span>
-                <img src="https://i.imgur.com/I3pPDs5.png" className="imgheart" alt="Arrow Icon" />
+                <img src="https://i.imgur.com/I3pPDs5.png" className="imgheart" alt="ArrowIcon" />
               </div>
             </Link>
 
