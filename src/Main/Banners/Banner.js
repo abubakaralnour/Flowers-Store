@@ -6,6 +6,8 @@ import Markes from './Markes'
 import SameDayCom from './SameDayCom'
 import Birthday from './Birthday'
 import Visit from './Visit'
+import SwiperComponent from './SwiperComponent'
+
 
 
 const Banner = () => {
@@ -17,6 +19,9 @@ const Banner = () => {
     <SameDayCom/>
    <Birthday/>
   <Visit/>
+  <SwiperComponent/>
+
+
     </div>
   )
 }

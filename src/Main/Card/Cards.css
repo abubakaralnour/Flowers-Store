@@ -51,18 +51,19 @@ padding-top: 6px;
   @media (max-width:576px) {
 
     .p-card-Head{
-        font-size: 13px;
+        font-size: 18px;
+        font-weight: 600;
     }
     .p-card-prce{
-        font-size: 12px;
+        font-size: 14px;
     }
     .prs{
         font-size: 13px;
     }
 
     .Cardone img{
-        height: 260px;
-        width:  250px;
+        height: 300px;
+        width:  280px;
         
     }
   }

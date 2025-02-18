@@ -1,16 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import "../Main.css";
-
+import { BannerContext } from "../../Context/ContextMainbanner";
 const SameDayCom = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 576);
-    setIsMobile(window.innerWidth <= 576); // Set initial value correctly
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+    
+ const isMobile = useContext(BannerContext)
   return (
     <div className="Samedaycom">
       <img
