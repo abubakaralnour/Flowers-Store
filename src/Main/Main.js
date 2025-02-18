@@ -3,6 +3,8 @@ import "./Main.css";
 import MainImg from './Middle part/MainImg';
 import Banner from './Banners/Banner';
 import Cards from './Card/Cards';
+import TextAreaCard from './TextAreaAndCard/TextAreaCard';
+
 
 const Main = () => {
   return (
@@ -11,8 +13,8 @@ const Main = () => {
     <MainImg/>
     <Cards/>
     <Banner/>
+    <TextAreaCard/>
 
-    
     </div>
   )
 }
