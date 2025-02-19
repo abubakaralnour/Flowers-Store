@@ -23,7 +23,7 @@ const CardCollect = () => {
       {data.map((item) => (
         <SwiperSlide key={item.id}>
           <div className="card">
-            <img src={item.img} alt={item.title} />
+            <img src={item.img} alt={item.id} />
             <p className="p-card-Head">{item.title}</p>
             <p className="p-card-prce">
               from <span className="prs">{item.price}</span>
