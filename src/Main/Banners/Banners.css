@@ -49,7 +49,7 @@
 }
 
 .largfont {
-  font-size: 46px;
+  font-size: 43px;
   font-weight: 700;
   font-family: "proxima-nova", sans-serif;
 }
@@ -95,6 +95,7 @@
   .largfont {
     font-size: 25px;
     margin: 1px;
+    color: #2C2C2D;
   }
 
   .overlay-text-banner p {
@@ -122,6 +123,7 @@
   .largfont {
     font-size: 46px;
     padding: 10px;
+    color: #2C2C2D;
   }
 
   .topbaner img {
@@ -230,7 +232,7 @@
   font-size: 18px;
   font-weight: 200;
   padding: 10px;
-  color: #2d2d2c;
+  color: #2D2D2c;
 }
 
 @media (max-width: 992px) {
@@ -245,6 +247,7 @@
   }
   .largfont {
     font-size: 25px;
+    
   }
   .overlay-text-Samedaycom button {
     font-size: 15px;

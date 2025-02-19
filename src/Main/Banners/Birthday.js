@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { BannerContext } from "../../Context/ContextMainbanner";
 const Birthday = () => {
   
-const isMobile=useContext({BannerContext})
+const isMobile=useContext(BannerContext)
   return (
     
     <div className="topbaner" style={{ paddingTop: "30px" }}>

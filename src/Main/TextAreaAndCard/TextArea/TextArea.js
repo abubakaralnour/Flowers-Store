@@ -1,5 +1,5 @@
 import React from "react";
-import "./TextaeaCard.css"
+import "../TextaeaCard.css"
 import data from "./DataTextara.json";
 const TextArea = () => {
   return (

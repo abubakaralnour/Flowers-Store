@@ -12,7 +12,7 @@ const CardCollect = () => {
       className="swiper"
       modules={[Virtual]}
       spaceBetween={20}
-      slidesPerView={2}
+      slidesPerView={1.5}
       breakpoints={{
         
         640: { slidesPerView: 2 },
