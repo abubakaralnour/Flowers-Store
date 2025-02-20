@@ -278,6 +278,10 @@
     width: 180px;
     font-family: "proxima-nova", sans-serif;
   }
+
+  .imgswiper{
+    height: 350px;
+  }
 }
 
 @media (max-width: 576px) {

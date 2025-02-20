@@ -4,6 +4,7 @@
     width: 100%;
     max-width: 1536px; /* Adjust based on your design */
     margin: auto;
+    margin-top: 200px;
   }
   
   /* Image Styling */
@@ -131,6 +132,7 @@ left: 20%     ;
           
 
         .image-container {
+         
             display: flex;
             flex-direction: column;
             align-items: center;

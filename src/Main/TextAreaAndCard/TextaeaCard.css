@@ -104,6 +104,8 @@ padding: 20px;
     }
     #card{
         max-width: 300px;
+        height: auto;
         margin: auto;
+        object-fit: cover;
     }
 }
