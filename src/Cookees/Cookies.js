@@ -18,7 +18,7 @@ const Cookies = () => {
         We use our own and third-party cookies and tracking technologies to give
         you the best shopping experience. For more information, see our
         <span className="privicy">
-          <a href="#"> Privacy Policy </a>
+          <a href="https://bouqs.com/about-us/privacy"> Privacy Policy </a>
         </span>
         <span className="x" onClick={() => setIsOpen(false)}>X</span>
       </p>
