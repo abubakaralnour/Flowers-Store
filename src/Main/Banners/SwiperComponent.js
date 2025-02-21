@@ -19,7 +19,7 @@ const SwiperComponent = () => {
       autoplay={{ delay: 3000, disableOnInteraction: false }}
       loop={true}
       breakpoints={{
-        320: { slidesPerView: 2 },
+        320: { slidesPerView: 1.5 },
         480: { slidesPerView: 2 },
         768: { slidesPerView: 3 },
         1024: { slidesPerView: 4 },

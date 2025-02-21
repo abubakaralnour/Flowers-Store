@@ -34,15 +34,15 @@ const RootHead = () => {
 
   // Use effect to compare prevstate and currentstate
   useEffect(() => {
-    if (state.prevstate > state.currentstate || state.currentstate ===0) {
+    if (state.prevstate > state.currentstate || state.currentstate < 150) {
       setShowHead(true);
     } else {
       setShowHead(false);
     }
   }, [state.currentstate, state.prevstate]);
-  useEffect(() => {
-    console.log("Prev:", state.prevstate, "Current:", state.currentstate, "ShowHead:", showHead);
-  }, [state.currentstate, state.prevstate, showHead]);
+//   useEffect(() => {
+//     console.log("Prev:", state.prevstate, "Current:", state.currentstate, "ShowHead:", showHead);
+//   }, [state.currentstate, state.prevstate, showHead]);
   
   return (
     <div>

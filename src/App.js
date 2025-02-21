@@ -3,6 +3,7 @@ import {  BrowserRouter as Router } from 'react-router-dom';
 import ContextMainbanner from './Context/ContextMainbanner';
 import Main from './Main/Main';
 import RootHead from './Head/RootHead';
+import Cookies from './Cookees/Cookies';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     
    </Router>
    </ContextMainbanner>
+   <Cookies/>
     </div>
   );
 }
