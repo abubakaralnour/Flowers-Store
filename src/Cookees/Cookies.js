@@ -7,7 +7,7 @@ const Cookies = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setIsOpen(true);
-    }, 8000);
+    }, 9000);
 
     return () => clearTimeout(timer); // Cleanup function
   }, []);
