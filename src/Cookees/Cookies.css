@@ -8,11 +8,11 @@ align-items: center;
 position: fixed;
 bottom: 0;
 z-index: 1200;
-
+font-size: 14px;
 }
 
 .Cookies span{
-    font-size: 14px;
+  
     
     
 }
@@ -29,4 +29,9 @@ z-index: 1200;
     cursor: pointer;
   
     
+}
+
+@media (max-width: 576px) {
+
+
 }

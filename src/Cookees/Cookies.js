@@ -16,7 +16,7 @@ const Cookies = () => {
     <div className="Cookies">
       <p className="as">
         We use our own and third-party cookies and tracking technologies to give
-        you the best shopping experience. For more information, see our
+        you the best shopping experience. For more information, see our{""}
         <span className="privicy">
           <a href="https://bouqs.com/about-us/privacy"> Privacy Policy </a>
         </span>
