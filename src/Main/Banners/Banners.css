@@ -279,9 +279,6 @@
     font-family: "proxima-nova", sans-serif;
   }
 
-  .imgswiper{
-    height: 350px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -331,9 +328,11 @@ padding-top: 13px;
   }
 
 
-  
 
-
+  .imgswiper{
+    height: 320px;
+    object-fit: cover;
+  }
 
 }
 
@@ -365,7 +364,7 @@ padding-top: 13px;
 /* Style for image */
 .imgswiper {
   width: 100%;
-  height: auto;
+  
   display: block;
 }
 
