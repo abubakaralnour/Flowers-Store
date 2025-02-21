@@ -5,11 +5,13 @@ const Cookies = () => {
   const [IsOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setIsOpen(true);
-    }, 9000);
+ const timee= setTimeout(() => {
+    setIsOpen(true);
+}, 9000);
+    
+    
 
-    return () => clearTimeout(timer); // Cleanup function
+    return () => clearTimeout(timee); // Cleanup function
   }, []);
 
   return IsOpen ? (

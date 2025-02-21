@@ -113,7 +113,7 @@ background-color: white;
   color: #333;
   transition: left 0.3s ease;
   padding: 0px;
-  z-index: 1000;
+  z-index: 1300;
   overflow-y: scroll;
 }
 
