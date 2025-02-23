@@ -4,7 +4,6 @@ import ContextMainbanner from './Context/ContextMainbanner';
 import Main from './Main/Main';
 import RootHead from './Head/RootHead';
 import Cookies from './Cookees/Cookies';
-import LargAds from './Cookees/LargAds/LargAds';
 import ContainerAds from './Cookees/LargAds/ContainerAds';
 
 function App() {
