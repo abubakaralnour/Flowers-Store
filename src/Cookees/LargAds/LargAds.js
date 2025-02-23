@@ -9,7 +9,7 @@ const LargAds = () => {
   useEffect(() => {
     const timeing = setTimeout(() => {
       setIsopen(true);
-    }, 15000);
+    }, 5000);
 
     return () => clearTimeout(timeing); // Fix: Using clearTimeout, not clearInterval
   }, []);

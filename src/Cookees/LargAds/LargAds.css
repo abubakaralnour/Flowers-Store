@@ -150,6 +150,7 @@ cursor: pointer;
 
 .Xclose-small {
     height: 30px;
+    color: white;
 }
 
 .Xclos-small {
@@ -192,7 +193,7 @@ cursor: pointer;
 
 .Here-small {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .Decline-small {
