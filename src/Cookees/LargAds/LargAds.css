@@ -3,7 +3,7 @@ display: flex;
 justify-content: center;
      height: 600px;
 align-items: center;
-background-color: red;
+
 font-family: "proxima-nova", sans-serif;
 /* Keep it visible */
  /* Ensure it is on top */
@@ -39,7 +39,7 @@ width: 100%;
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-color: red;
+       
             position: relative;
 
 }
@@ -141,38 +141,101 @@ cursor: pointer;
 
 
 /*Small*/
+.small-otherSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    
+    padding: 20px;
+}
 
+.Xclose-small {
+    height: 30px;
+}
 
-.SmallAds{
+.Xclos-small {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 10000; /* Ensure it's on top */
+}
+
+.close-and-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    position: relative;
 }
 
-.small-otherSide{
-    display: flex;
-justify-content: center;
-     flex-direction: column;
-     width: 80%;
-     height: 100vh;
-align-items: center;
-background-color: red;
-font-family: "proxima-nova", sans-serif;
-/* Keep it visible */
- /* Ensure it is on top */
-pointer-events: auto; /* Allow interactions */
-
-z-index: 1000;
-
+.small-logo-other-side-div {
+    width: 100%;
 }
 
-.small-logo-other-side-div{
-    height: 50%;
-    width:fit-content;
+.small-img-boug {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
-.small-img-boug{
-    height: 100%;
+
+.otherSide-child {
+    font-family: "proxima-nova", sans-serif;
     width: 100%;
+    background-color: #9dc7bb;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.Instant-small {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.Here-small {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.Decline-small {
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Not-small {
+    font-size: 13px;
+}
+
+.btn-small button {
+    background-color: #2e5645;
+}
+
+.container-larg-ads-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 90%; /* More responsive */
+    max-width: 400px; /* Prevents too much stretch */
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 10px;
+}
+
+.overlay-larg-samll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15, 15, 15, 0.7);
+    z-index: 9998;
 }

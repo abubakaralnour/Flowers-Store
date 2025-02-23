@@ -9,7 +9,7 @@ const SmallAds = () => {
   useEffect(() => {
     const timeing = setTimeout(() => {
       setIsopen(true);
-    }, 1000);
+    }, 13000);
 
     return () => clearTimeout(timeing); // Fix: Using clearTimeout, not clearInterval
   }, []);
@@ -32,12 +32,14 @@ const SmallAds = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [Isopen]); // Fix: Add Isopen as a dependency
-  return (<> {Isopen && <div className="overlay-larg" />}
-    <   div className="container-larg-ads">
-
-    <div className="small-otherSide">
+  return (<>  {Isopen && <div className="overlay-larg-samll" />}
+    
+    <   div className="container-larg-ads-small">
+    {Isopen && (
+    <div className="small-otherSide" ref={adref}>
+      <div className="close-and-img">
       <div
-        className="Xclos"
+        className="Xclos-small"
         onClick={() => {
           setIsopen(false);
         }}
@@ -45,7 +47,7 @@ const SmallAds = () => {
         <img
           src="https://i.imgur.com/XkIQFJd.png"
           alt="asd"
-          className="Xclose"
+          className="Xclose-small"
         />
       </div>
       <div className="small-logo-other-side-div">
@@ -53,15 +55,15 @@ const SmallAds = () => {
               alt="asd"
               className="small-img-boug"
               src="//assets.bounceexchange.com/assets/uploads/clients/7236/creatives/e990b89f250d90b95fa249462253195b.jpg"            />
-      </div>
+      </div></div>
 
       <div className="otherSide-child">
-        <p className="Instant">INSTANT MOOD BOOSTERS</p>
-        <h2 className="Here"> HERE'S 20% OFF</h2>
-        <p className="your">your first order of farm-fresh flowers.</p>
-        <Button>Get 20% Off</Button>
+        <p className="Instant-small">INSTANT MOOD BOOSTERS</p>
+        <h2 className="Here-small"> HERE'S 20% OFF</h2>
+        <p className="your-small">your first order of farm-fresh flowers.</p>
+       <div className="btn-small"> <Button>Get 20% Off</Button></div>
         <p
-          className="Decline"
+          className="Decline-small"
           onClick={() => {
             setIsopen(false);
           }}
@@ -69,15 +71,15 @@ const SmallAds = () => {
           Decline
         </p>
 
-        <p className="Not">
+        <p className="Not-small">
           *Not combinable with any other offers. One per customer and valid only
           on a customer's first order. Not applicable on subscriptions, gift
           trios, deal of the week, same-day Bouqs, vases, DIY party boxes, and
           wedding flowers. Exclusions apply.
         </p>
       </div>
-    </div></div>
-    </> 
+    </div>)}</div>
+  </> 
   );
 };
 
