@@ -39,6 +39,8 @@ width: 100%;
             justify-content: center;
             align-items: center;
             text-align: center;
+            background-color: red;
+            position: relative;
 
 }
 
@@ -104,11 +106,12 @@ height: 40px;
    
 }
 
-.Xclose{
+.Xclos{
     position: absolute;
-    right: 17%;
-    top: 0;
+    right: 0%;
+    top: 0%;
     height: 40px;
+    z-index: 50;
 cursor: pointer;
 
 }
@@ -132,7 +135,6 @@ cursor: pointer;
     bottom: 0;
     background-color: rgba(15, 15, 15, 0.7); /* Pale white background with 50% opacity */
     z-index: 9999; 
-
     
 }
 
