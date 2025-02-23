@@ -1,0 +1,176 @@
+.large-ads{
+display: flex;
+justify-content: center;
+     height: 600px;
+align-items: center;
+background-color: red;
+font-family: "proxima-nova", sans-serif;
+/* Keep it visible */
+ /* Ensure it is on top */
+pointer-events: auto; /* Allow interactions */
+
+z-index: 1000;
+
+
+}
+.flower-img{
+
+ height: 100%;
+    width: 371px;
+}
+
+.img-boug{
+    height: 100%;
+object-fit: cover;
+width: 100%;
+
+}
+
+
+
+.otherSide{
+    width: 371px;
+   background-color: #9dc7bb;
+    display: flex
+    ;
+    height: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+}
+
+
+/* .sa{
+    float: none;
+    height: auto;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.logo-other-side-div{
+    margin-top: 10px;
+    padding-bottom: 30px;
+    
+  
+}
+.logo-other-side{
+height: 40px;
+
+
+}
+
+.otherSide-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.Instant{
+    font-size: 18px;
+    
+}
+
+.Here{
+    font-weight: bold;
+    font-size: 40px;
+   
+}
+
+.your{
+    font-size: 18px;
+}
+
+.otherSide-child button{
+    width: 200px;
+   margin-top: 10px;
+    background-color: #2e5645;
+    
+}
+
+.Decline{
+    font-size: 16px;
+    text-decoration: underline;
+   margin-top: 15px;
+    cursor: pointer;
+    
+}
+.Not{
+    font-size: 13px;
+   
+}
+
+.Xclose{
+    position: absolute;
+    right: 17%;
+    top: 0;
+    height: 40px;
+cursor: pointer;
+
+}
+.container-larg-ads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    
+}
+.overlay-larg{
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15, 15, 15, 0.7); /* Pale white background with 50% opacity */
+    z-index: 9999; 
+
+    
+}
+
+
+
+/*Small*/
+
+
+.SmallAds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.small-otherSide{
+    display: flex;
+justify-content: center;
+     flex-direction: column;
+     width: 80%;
+     height: 100vh;
+align-items: center;
+background-color: red;
+font-family: "proxima-nova", sans-serif;
+/* Keep it visible */
+ /* Ensure it is on top */
+pointer-events: auto; /* Allow interactions */
+
+z-index: 1000;
+
+}
+
+.small-logo-other-side-div{
+    height: 50%;
+    width:fit-content;
+    object-fit: cover;
+}
+.small-img-boug{
+    height: 100%;
+    width: 100%;
+}
