@@ -3,6 +3,8 @@ import React, { lazy, Suspense } from "react";
 
 import {  BrowserRouter as Router } from 'react-router-dom';
 import Loading from './Loading';
+import LargAds from './Cookees/LargAds/LargAds';
+import SmallAds from './Cookees/LargAds/SmallAds';
 
 //  const ContextMainbanner = lazy(() =>import (ContextMainbanner from './Context/ContextMainbanner'));
 //  const Main  = lazy(() =>import (Main from './Main/Main'));
@@ -23,13 +25,14 @@ function App() {
    <Suspense fallback={<div><Loading/></div>}>
      <RootHead/>
      <Main/>
+     <Cookies/>
+
+   
+    <ContainerAds/>
      </Suspense>
    </Router>
    </ContextMainbanner>
-   <Cookies/>
 
-   
-   <ContainerAds/>
 
     </div>
   );

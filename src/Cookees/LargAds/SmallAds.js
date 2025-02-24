@@ -32,7 +32,24 @@ const SmallAds = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [Isopen]); // Fix: Add Isopen as a dependency
-  return (<>  {Isopen && <div className="overlay-larg-samll" />}
+
+
+  /* stop moving background on scrool*/
+  useEffect(() => {
+    if (Isopen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup when the component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [Isopen]);
+
+  return (<> 
+   {Isopen && <div className="overlay-larg-samll" />}
     
     <   div className="container-larg-ads-small">
     {Isopen && (

@@ -1,3 +1,4 @@
+
 .large-ads{
 display: flex;
 justify-content: center;
@@ -9,7 +10,7 @@ font-family: "proxima-nova", sans-serif;
  /* Ensure it is on top */
 pointer-events: auto; /* Allow interactions */
 
-z-index: 1000;
+z-index: 9999;
 
 
 }
@@ -118,8 +119,9 @@ cursor: pointer;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
-    
+       z-index: 9900;
+       pointer-events: none;/* this bug make me spent 3 hour to descoverd*/
+
 }
 .overlay-larg{
     position: fixed; /* Fixed position to cover the entire viewport */
@@ -128,8 +130,9 @@ cursor: pointer;
     right: 0;
     bottom: 0;
     background-color: rgba(15, 15, 15, 0.7); /* Pale white background with 50% opacity */
-    z-index: 9999; 
+    z-index: 2000; 
     
+
 }
 
 
@@ -221,7 +224,7 @@ cursor: pointer;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9999;
+    z-index: 10000;
     border-radius: 10px;
 }
 

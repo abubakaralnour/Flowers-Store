@@ -3,55 +3,48 @@ import "./LargAds.css";
 import { Button } from "react-bootstrap";
 
 const LargAds = () => {
-  const [Isopen, setIsopen] = useState(false);
-  const adref = useRef(null);
+   const [Isopen, setIsopen] = useState(false);
+   const adref = useRef(null);
+ 
+   useEffect(() => {
+     const timeing = setTimeout(() => {
+       setIsopen(true);
+     }, 5000);
+ 
+     return () => clearTimeout(timeing); // Fix: Using clearTimeout, not clearInterval
+   }, []);
+ 
+   useEffect(() => {
+     const handleClickOutside = (event) => {
+       if (adref.current && !adref.current.contains(event.target)) {
+         console.log("iam close outside", Isopen); // Debugging
+         setIsopen(false); // Fix: Using setState properly
+       }
+     };
+ 
+     // Attach event listener when Isopen is true
+     if (Isopen) {
+       document.addEventListener("mousedown", handleClickOutside);
+     }
+ 
+     // Cleanup function: Remove event listener when component unmounts
+     return () => {
+       document.removeEventListener("mousedown", handleClickOutside);
+     };
+   }, [Isopen]); // Fix: Add Isopen as a dependency
 
-  useEffect(() => {
-    const timeing = setTimeout(() => {
-      setIsopen(true);
-    }, 15000);
-
-    return () => clearTimeout(timeing); // Fix: Using clearTimeout, not clearInterval
-  }, []);
-
-
-
-
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (adref.current && !adref.current.contains(event.target)) {
-        console.log("iam close outside", Isopen); // Debugging
-        setIsopen(false); // Fix: Using setState properly
-      }
-    };
-
-    // Attach event listener when Isopen is true
+   useEffect(() => {
     if (Isopen) {
-      document.addEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
     }
 
-    // Cleanup function: Remove event listener when component unmounts
+    // Cleanup when the component unmounts
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "auto";
     };
-  }, [Isopen]); // Fix: Add Isopen as a dependency
-
-
-
-useEffect(() => {
-  if(Isopen)
-  {
-    document.body.style.overflow="hidden"
-  }
-  else{
-    document.body.style.overflow="auto"
-  }
-
-  return () =>    { document.styleSheets.overflow="auto"}
-
-}, [Isopen])
-
+  }, [Isopen]);
 
 
   return (
