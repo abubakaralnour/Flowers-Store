@@ -4,6 +4,7 @@ import {Link } from "react-router-dom";
 import BtnSideNav from "./BtnSideNavComp/BtnSideNav";
 
 const MxHBtnHNv = () => {
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 992);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +15,20 @@ console.log(menuOpen)
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    if (isSidebarOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup when the component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isSidebarOpen]);
+
 
   return (
     <>

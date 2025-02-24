@@ -7,7 +7,7 @@ const Cookies = () => {
   useEffect(() => {
  const timee= setTimeout(() => {
     setIsOpen(true);
-}, 9000);
+}, 7000);
     
     
 

@@ -9,7 +9,7 @@ const LargAds = () => {
   useEffect(() => {
     const timeing = setTimeout(() => {
       setIsopen(true);
-    }, 5000);
+    }, 15000);
 
     return () => clearTimeout(timeing); // Fix: Using clearTimeout, not clearInterval
   }, []);
@@ -36,6 +36,23 @@ const LargAds = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [Isopen]); // Fix: Add Isopen as a dependency
+
+
+
+useEffect(() => {
+  if(Isopen)
+  {
+    document.body.style.overflow="hidden"
+  }
+  else{
+    document.body.style.overflow="auto"
+  }
+
+  return () =>    { document.styleSheets.overflow="auto"}
+
+}, [Isopen])
+
+
 
   return (
     <>    {Isopen && <div className="overlay-larg" />}
