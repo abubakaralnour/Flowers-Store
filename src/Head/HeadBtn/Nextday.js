@@ -8,14 +8,14 @@ const Nextday = () => {
         <ul>
           <li>
             <Link to="/help">
-              <div className="twicearoow">
+              <li className="twicearoow">
                 <span>Nextday</span>
                 <img
                   src="https://i.imgur.com/I3pPDs5.png"
                   className="imgheart"
                   alt="ArrowIcon"
                 />
-              </div>
+              </li>
             </Link>
 
             {/* Dropdown Menu inside the same <li> */}

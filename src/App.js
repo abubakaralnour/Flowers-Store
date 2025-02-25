@@ -2,7 +2,7 @@ import './App.css';
 import React, { lazy, Suspense } from "react";
 
 import {  BrowserRouter as Router } from 'react-router-dom';
-import Loading from './Loading';
+import Loading from './Loading/Loading';
 
 
 //  const ContextMainbanner = lazy(() =>import (ContextMainbanner from './Context/ContextMainbanner'));
@@ -27,7 +27,7 @@ function App() {
      <Cookies/>
 
    
-    <ContainerAds/>
+    {/* <ContainerAds/> */}
      </Suspense>
    </Router>
    </ContextMainbanner>

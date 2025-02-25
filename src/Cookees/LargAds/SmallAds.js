@@ -9,7 +9,7 @@ const SmallAds = () => {
   useEffect(() => {
     const timeing = setTimeout(() => {
       setIsopen(true);
-    }, 13000);
+    }, 8000);
 
     return () => clearTimeout(timeing); // Fix: Using clearTimeout, not clearInterval
   }, []);

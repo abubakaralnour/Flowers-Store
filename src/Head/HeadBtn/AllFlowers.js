@@ -42,7 +42,7 @@ const AllFlowers = () => {
                     <li><Link to="#">The Valentine's Day Collection</Link></li>
                     <li><Link to="#">Davd Austin Roses</Link></li>
                     <li><Link to="#">PArty Boxes</Link></li>
-                    <li><Link to="#"></Link>Corporate</li>
+                    <li><Link to="#">Corporate</Link></li>
                     
                   </ul>
                 </div>

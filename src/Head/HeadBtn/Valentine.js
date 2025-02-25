@@ -24,8 +24,8 @@ const Valentine = () => {
                   <ul>
                     <li><Link to="#">Valentine'sDay Flowers</Link></li>
                     <li><Link to="#">Valentine'S dAY</Link></li>
-                    <li><Link to="#"></Link>Valentine Day PLants</li>
-                    <li><Link to="#"></Link>Valentine Day Gifts</li>
+                    <li><Link to="#">Valentine Day PLants</Link></li>
+                    <li><Link to="#">Valentine Day Gifts</Link></li>
               
                   </ul>
                 </div>
