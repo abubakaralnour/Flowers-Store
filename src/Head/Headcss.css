@@ -414,7 +414,7 @@ color: white;
 /* Navbar Styling */
 .navbar {
   background-color: #fff;
-  padding: 15px 10px;
+  padding: 15px 8px;
  
   display: flex;
   align-items: center;
@@ -436,9 +436,9 @@ color: white;
 .liheadbtn a {
   text-decoration: none;
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 1px 10px;
+  padding: 1px 1px;
   display: flex;
   align-items: center;
   gap: 2px;
@@ -456,11 +456,16 @@ color: white;
   transition: transform 0.3s ease-in-out;
 }
 
+
+
 .liheadbtn a:hover .imgheart {
   transform: rotate(90deg);
 }
 
+
+
 /* Dropdown Menu */
+
 .drop {
   position: absolute;
   top: 100%;
@@ -472,7 +477,6 @@ color: white;
   white-space: nowrap; /* Prevents breaking at spaces */
   overflow-wrap: normal; /* Ensures normal word wrapping */
   display: none; /* Hide initially */
-
   z-index: 1000;
 
 }
@@ -486,7 +490,7 @@ color: white;
 /* Dropdown Grid */
 .drop-grid {
   display: flex;
-gap: .5rem;
+
 
   padding: 10px;
   
@@ -509,7 +513,7 @@ gap: .5rem;
 }
 
 .category ul {
-
+gap: 5px;
   list-style: none;
   padding: 0;
   display: flex;
@@ -529,7 +533,6 @@ gap: .5rem;
   padding: 1px;
   font-size: 13px;
   display: block;
-
   transition: background 0.3s ease, color 0.3s ease;
 }
 

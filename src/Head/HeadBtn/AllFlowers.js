@@ -16,7 +16,7 @@ const AllFlowers = () => {
             </Link>
 
             {/* Dropdown Menu inside the same <li> */}
-            <div className="drop">
+            <div className="drop" id="drop-special">
               <div className="drop-grid">
                 <div className="category">
                   <h4>Shop</h4>
